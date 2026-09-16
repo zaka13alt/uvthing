@@ -1,4 +1,3 @@
-
 "use strict";
 
 const form = document.getElementById("uv-form");
@@ -19,10 +18,10 @@ async function openW1I41(url) {
             "/wisp/";
 
         await connection.setTransport("/epox.mjs", [
-            { wisp: wispUrl },
+            { wisp: wispUrl }
         ]);
 
-        const frame = document.getElementById("u22-frame");
+        const frame = document.getElementById("uv-frame");
 
         frame.style.display = "block";
         frame.style.position = "fixed";
@@ -41,19 +40,20 @@ async function openW1I41(url) {
         frame.src = __u22$config.prefix + __u22$config.encodeUrl(url);
     } catch (err) {
         error.textContent = "Failed to load W1I41.";
-        errorCode.textContent = err.toString();
+        errorCode.textContent = String(err);
         console.error(err);
     }
 }
 
-form.addEventListener("submit", async (event) => {
+form.addEventListener("submit", async function (event) {
     event.preventDefault();
+
     const url = search(address.value, searchEngine.value);
     await openW1I41(url);
 });
 
-window.addEventListener("load", () => {
-    setTimeout(() => {
+window.addEventListener("load", function () {
+    setTimeout(function () {
         openW1I41("https://google.com");
     }, 5000);
 });
