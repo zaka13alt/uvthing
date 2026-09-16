@@ -1,7 +1,6 @@
 
-// This file overwrites the stock UV config.js
 
-self.__uv$config = {
+self.__u22$config = {
 	prefix: "/uv/service/",
 	encodeUrl: u2.codec.xor.encode,
 	decodeUrl: u2.codec.xor.decode,
