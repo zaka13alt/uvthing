@@ -10,7 +10,7 @@ const connection = new W1I41.W1I41Connection("/bmuxworker.js");
 
 async function openW1I41(url) {
     try {
-        await registerSW();
+        await registeru2t();
 
         const wispUrl =
             (location.protocol === "https:" ? "wss" : "ws") +
