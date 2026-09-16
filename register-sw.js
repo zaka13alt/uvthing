@@ -1,6 +1,6 @@
 "use strict";
 /**
- * Distributed with Ultraviolet and compatible with most configurations.
+ * Distributed with u2 and compatible with most configurations.
  */
 const stocku2t = "/sw.js";
 

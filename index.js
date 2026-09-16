@@ -1,27 +1,23 @@
 "use strict";
 
-const form = document.getElementById("uv-form");
-const address = document.getElementById("uv-address");
-const searchEngine = document.getElementById("uv-search-engine");
-const error = document.getElementById("uv-error");
-const errorCode = document.getElementById("uv-error-code");
+const form = document.getElementById("u22-form");
+const address = document.getElementById("u22-address");
+const searchEngine = document.getElementById("u22-search-engine");
+const error = document.getElementById("u22-error");
+const errorCode = document.getElementById("u22-error-code");
 const connection = new W1I41.W1I41Connection("/bmuxworker.js");
 
 async function openW1I41(url) {
     try {
         await registeru2t();
 
-        const wispUrl =
-            (location.protocol === "https:" ? "wss" : "ws") +
-            "://" +
-            location.host +
-            "/wisp/";
+        const wispUrl = "wss://api.zaka13.com/wisp/";
 
         await connection.setTransport("/epox.mjs", [
             { wisp: wispUrl }
         ]);
 
-        const frame = document.getElementById("uv-frame");
+        const frame = document.getElementById("u22-frame");
 
         frame.style.display = "block";
         frame.style.position = "fixed";
@@ -50,10 +46,4 @@ form.addEventListener("submit", async function (event) {
 
     const url = search(address.value, searchEngine.value);
     await openW1I41(url);
-});
-
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        openW1I41("https://google.com");
-    }, 5000);
 });

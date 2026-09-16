@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 2rem;
+	font-family: system-ui, sans-serif;
+	color: #172033;
+	background: #eef2f7;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-wrapper {
+	gap: 0.75rem;
+	margin: 12vh auto 1rem;
+}
+
+.logo-wrapper h1 {
+	margin: 0;
+}
+
+.desc {
+	max-width: 42rem;
+	margin: 0 auto 1rem;
+	text-align: center;
+}
+
+#u22-form {
+	max-width: 42rem;
+	margin: 2rem auto;
+}
+
+#u22-address {
+	width: 100%;
+	padding: 0.9rem 1rem;
+	border: 1px solid #aeb9ca;
+	border-radius: 0.5rem;
+	font: inherit;
+}
+
+footer {
+	margin: 3rem auto 0;
+	max-width: 42rem;
+	text-align: center;
+}
+
+footer a {
+	margin: 0 0.5rem;
+}
+
+iframe {
+	background: #fff;
+}
