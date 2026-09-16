@@ -2,7 +2,7 @@
 /*global u22ServiceWorker,__u22$config*/
 /*
  
- * However, if a user changes the location of u22.bundle.js/u22.config.js or sw.js is not relative to them, they will need to modify this script locally.
+ * hi
  */
 importScripts('u22.bundle.js');
 importScripts('u22.config.js');
