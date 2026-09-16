@@ -5,8 +5,8 @@
     var _base = _svc !== -1 ? _href.slice(0, _svc) + '/' : new URL('./', _href).href;
     self.__u22$config = {
         prefix: new URL('u22/service/', _base).pathname,
-        encodeUrl: Ultraviolet.codec.xor.encode,
-        decodeUrl: Ultraviolet.codec.xor.decode,
+        encodeUrl: u2.codec.xor.encode,
+        decodeUrl: u2.codec.xor.decode,
         handler: new URL('uv.handler.js', _base).href,
         client:  new URL('uv.client.js',  _base).href,
         bundle:  new URL('uv.bundle.js',  _base).href,
