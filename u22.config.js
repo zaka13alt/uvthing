@@ -1,7 +1,7 @@
 
 
 self.__u22$config = {
-	prefix: "/u22/service/",
+	prefix: "/token/auth/key/",
 	encodeUrl: u2.codec.xor.encode,
 	decodeUrl: u2.codec.xor.decode,
 	handler: "/u22.handler.js",
