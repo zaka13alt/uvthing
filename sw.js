@@ -5,7 +5,7 @@
  * hi
  */
 importScripts('u22.bundle.js');
-importScripts('u22.config.js');
+importScripts('conf.js');
 importScripts(__u22$config.sw || 'u22.sw.js');
 
 const u22 = new u22ServiceWorker();
