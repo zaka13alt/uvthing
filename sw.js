@@ -19,7 +19,7 @@ async function handleRequest(event) {
         return await fetch(event.request);
     } catch (error) {
         console.error('Service worker request failed:', error);
-        return new Response('Unable to fetch the requested resource.', {
+        return new Response('cache error', {
             status: 502,
             statusText: 'Bad Gateway',
             headers: { 'Content-Type': 'text/plain; charset=utf-8' },
