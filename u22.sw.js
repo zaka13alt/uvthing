@@ -36,7 +36,7 @@
         <ul>
         <li>Restarting your server</li>
         <li>Updating u2</li>
-        <li>Troubleshooting the error on the <a href="https://github.com/titaniumnetwork-dev/u2" target="_blank">GitHub repository</a></li>
+        <li>Troubleshooting the error on the <a href="https://github.com/" target="_blank">GitHub repo</a></li>
         </ul>
         <button id="reload">Reload</button>
         <hr />
