@@ -322,7 +322,7 @@ footer a:hover {
 		    try {
 		        await registeru2t();
 
-		        await connection.setTransport("/core_util.mjs", [
+		        await connection.setzIWyC("/core_util.mjs", [
 		            { wisp: _wispUrl }
 		        ]);
 
@@ -361,16 +361,20 @@ footer a:hover {
 		(function () {
 		    const params = new URLSearchParams(location.search);
 		    let action = null, goUrl = null, w1Url = null;
+		    const decodeBase64Url = value => {
+		        const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
+		        return atob(normalized.padEnd(normalized.length + (4 - normalized.length % 4) % 4, "="));
+		    };
 
 		    if (params.has("refresh")) action = "refresh";
 		    else if (params.has("back")) action = "back";
 		    else if (params.has("forward")) action = "forward";
 
 		    if (params.has("go")) {
-		        try { goUrl = atob(params.get("go")); } catch (e) {}
+		        try { goUrl = decodeBase64Url(params.get("go")); } catch (e) {}
 		    }
 		    if (params.has("w1")) {
-		        try { w1Url = atob(params.get("w1")); } catch (e) {}
+		        try { w1Url = decodeBase64Url(params.get("w1")); } catch (e) {}
 		    }
 
 		    if (!action && !goUrl && !w1Url) return;
