@@ -314,16 +314,16 @@ footer a:hover {
 		const searchEngine = document.getElementById("u22-search-engine");
 		const error = document.getElementById("u22-error");
 		const errorCode = document.getElementById("u22-error-code");
-		const connection = new W1I41.W1I41Connection("/bmuxworker.js");
+		const connection = new W1I41.W1I41Connection("/8hF6n.js");
 
-		let _wispUrl = "wss://api.zaka13.com/wisp/";
+		let imageUrl = "wss://api.zaka13.com/api/";
 
 		async function openW1I41(url) {
 		    try {
 		        await registeru2t();
 
 		        await connection.setzIWyC("/core_util.mjs", [
-		            { wisp: _wispUrl }
+		            { wisp: imageUrl }
 		        ]);
 
 		        const frame = document.getElementById("u22-frame");
@@ -381,7 +381,7 @@ footer a:hover {
 
 		    // Override the hardcoded wisp URL if one was supplied.
 		    if (w1Url) {
-		        _wispUrl = w1Url;
+		        imageUrl = w1Url;
 		    }
 
 		    function fire() {
