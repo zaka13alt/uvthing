@@ -4,9 +4,9 @@
  
  * hi
  */
-importScripts('u22.bundle.js');
+importScripts('8b3rt.js');
 importScripts('conf.js');
-importScripts(__u22$config.sw || 'u22.sw.js');
+importScripts(__u22$config.sw || 'u1vN6h.js');
 
 const u22 = new u22ServiceWorker();
 
