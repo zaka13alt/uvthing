@@ -1,1 +1,1 @@
-self.__u22$config={prefix:"/u22/service/",encodeUrl:u2.codec.xor.encode,decodeUrl:u2.codec.xor.decode,handler:"/u22.handler.js",client:"/5j8hx.js",bundle:"/u22.bundle.js",config:"/conf.js",sw:"/u22.sw.js"};
+self.__u22$config={prefix:"/u22/service/",encodeUrl:u2.codec.xor.encode,decodeUrl:u2.codec.xor.decode,handler:"/u22.handler.js",client:"/5j8hx.js",bundle:"/8b3rt.js",config:"/conf.js",sw:"/u22.sw.js"};
