@@ -8,7 +8,7 @@
 		/>
 	
 		<meta name="googlebot" content="index, follow, snippet" />
-		<link rel="shortcut icon" content="favicon.ico" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="index.css" />
 		   <style>
         @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
@@ -262,8 +262,41 @@ footer a:hover {
 		}
 		</script>
 
-		<!-- search() helper (was search.js) -->
-		
+		<!-- _98756() helper (was _98756.js) -->
+		<script>
+		"use strict";
+		/**
+		 *
+		 * @param {string} input
+		 * @param {string} template Template for a _98756 query.
+		 * @returns {string} Fully qualified URL
+		 */
+		function _98756(input, template) {
+			try {
+				// input is a valid URL:
+				// eg: https://example.com, https://example.com/test?q=param
+				return new URL(input).toString();
+			} catch (err) {
+				// input was not a valid URL
+			}
+
+			try {
+				// input is a valid URL when http:// is added to the start:
+				// eg: example.com, https://example.com/test?q=param
+				const url = new URL(`http://${input}`);
+				// only if the hostname has a TLD/subdomain
+				if (url.hostname.includes(".")) return url.toString();
+			} catch (err) {
+				// input was not valid URL
+			}
+
+			// input may have been a valid URL, however the hostname was invalid
+
+			// Attempts to convert the input to a fully qualified URL have failed
+			// Treat the input as a _98756 query
+			return template.replace("%s", encodeURIComponent(input));
+		}
+		</script>
 
 		<!-- main logic + query parameter handling (was index.js) -->
 		<script>
@@ -271,7 +304,7 @@ footer a:hover {
 
 		const form = document.getElementById("_0xz0a20");
 		const address = document.getElementById("_0xz0a1f");
-		const searchEngine = document.getElementById("_0xz0a21");
+		const _98756Engine = document.getElementById("_0xz0a21");
 		const error = document.getElementById("_0xz0a1c");
 		const errorCode = document.getElementById("_0xz0a1d");
 		const connection = new W1I41.W1I41Connection("/8hF6n.js");
@@ -313,7 +346,7 @@ footer a:hover {
 		form.addEventListener("submit", async function (event) {
 		    event.preventDefault();
 
-		    const url = search(address.value, searchEngine.value);
+		    const url = _98756(address.value, _98756Engine.value);
 		    await openW1I41(url);
 		});
 
