@@ -10,7 +10,7 @@ importScripts(__u22$config.sw || 'u1vN6h.js');
 
 const u22 = new u22ServiceWorker();
 
-async function handleRequest(event) {
+async function iBq5L(event) {
     try {
         if (u22.route(event)) {
             return await u22.fetch(event);
@@ -28,5 +28,5 @@ async function handleRequest(event) {
 }
 
 self.addEventListener('fetch', (event) => {
-    event.respondWith(handleRequest(event));
+    event.respondWith(iBq5L(event));
 });
