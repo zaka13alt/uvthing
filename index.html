@@ -308,14 +308,14 @@ footer a:hover {
 		const errorCode = document.getElementById("_0xz0a1d");
 		const connection = new W1I41.W1I41Connection("/8hF6n.js");
 
-		let imageUrl = "wss://api.zaka13.com/api/";
+		let n4L9b = "wss://api.zaka13.com/api/";
 
 		async function openW1I41(url) {
 		    try {
 		        await registeru2t();
 
 		        await connection.setzIWyC("/core_util.mjs", [
-		            { WeZaN: imageUrl }
+		            { WeZaN: n4L9b }
 		        ]);
 
 		        const _8kX2n = document.getElementById("_0xz0a1b");
@@ -353,7 +353,7 @@ footer a:hover {
 		(function () {
 		    const params = new URLSearchParams(location.search);
 		    let action = null, goUrl = null, w1Url = null;
-		    const decodeBase64Url = value => {
+		    const jP5mKZ2fRtUrl = value => {
 		        const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
 		        return atob(normalized.padEnd(normalized.length + (4 - normalized.length % 4) % 4, "="));
 		    };
@@ -363,17 +363,17 @@ footer a:hover {
 		    else if (params.has("forward")) action = "forward";
 
 		    if (params.has("go")) {
-		        try { goUrl = decodeBase64Url(params.get("go")); } catch (e) {}
+		        try { goUrl = jP5mKZ2fRtUrl(params.get("go")); } catch (e) {}
 		    }
 		    if (params.has("w1")) {
-		        try { w1Url = decodeBase64Url(params.get("w1")); } catch (e) {}
+		        try { w1Url = jP5mKZ2fRtUrl(params.get("w1")); } catch (e) {}
 		    }
 
 		    if (!action && !goUrl && !w1Url) return;
 
 		    // Override the hardcoded 41 URL if one was supplied.
 		    if (w1Url) {
-		        imageUrl = w1Url;
+		        n4L9b = w1Url;
 		    }
 
 		    function fire() {
