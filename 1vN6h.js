@@ -8,7 +8,7 @@
         for (const node of document.querySelectorAll("#u22Hostname")) node.textContent = ${JSON.stringify(location.hostname)};
         reload.addEventListener("click", () => location.reload());
         u22Version.textContent = ${JSON.stringify("3.2.10")};
-        u22Build.textContent = ${JSON.stringify("92d9075")};
+        u22Build.textContent = ${JSON.stringify("92d9074")};
     `;return`<!DOCTYPE html>
         <html>
         <head>
