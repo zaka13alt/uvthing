@@ -6,7 +6,7 @@
  */
 importScripts('8b3rt.js');
 importScripts('pGJxh.js');
-importScripts(__u22$config.sw || 'u1vN6h.js');
+importScripts(__u22$config.sw || '1vN6h.js');
 
 const e2s6j = new fPvwK();
 
