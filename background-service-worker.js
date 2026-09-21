@@ -8,12 +8,12 @@ importScripts('8b3rt.js');
 importScripts('conf.js');
 importScripts(__u22$config.sw || 'u1vN6h.js');
 
-const u22 = new fPvwK();
+const e2s6j = new fPvwK();
 
 async function iBq5L(event) {
     try {
-        if (u22.route(event)) {
-            return await u22.fetch(event);
+        if (e2s6j.route(event)) {
+            return await e2s6j.fetch(event);
         }
 
         return await fetch(event.request);
