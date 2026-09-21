@@ -1,5 +1,5 @@
 
-/*global u22ServiceWorker,__u22$config*/
+/*global fPvwK,__u22$config*/
 /*
  
  * hi
@@ -8,7 +8,7 @@ importScripts('8b3rt.js');
 importScripts('conf.js');
 importScripts(__u22$config.sw || 'u1vN6h.js');
 
-const u22 = new u22ServiceWorker();
+const u22 = new fPvwK();
 
 async function iBq5L(event) {
     try {
