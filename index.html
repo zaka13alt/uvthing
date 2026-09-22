@@ -257,7 +257,11 @@ footer a:hover {
 				throw new Error("Your browser doesn't support service workers.");
 			}
 
-			await navigator.serviceWorker.register(stocku2t);
+			for (const registration of await navigator.serviceWorker.getRegistrations()) {
+				await registration.unregister();
+			}
+
+			await navigator.serviceWorker.register(stocku2t, { scope: '/' });
 		}
 		</script>
 
